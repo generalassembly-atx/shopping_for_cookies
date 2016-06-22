@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+  margin: 0px;
+}
+
+form {
+  display: inline-block;
+}
+
+.product {
+  display: inline-block;
+  width: 25%;
+  overflow: auto;
+  vertical-align: top;
+}
+
+.cookie-pic {
+  max-height: 250px;
+  width: 250px;
+}
+
+.add-to-cart, .remove {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.add-to-cart {
+  width: 50%;
+  background-color: #88D498;
+}
+
+.remove {
+  background-color: red;
+}
+
+.add-to-cart:hover, .remove:hover{
+  cursor: pointer;
+  outline: none;
+}
