@@ -39,6 +39,14 @@ app.use(methodOverride(function(req, res){
   }
 }));
 
+// You'll probably want to set up some middleware here that instantiates your shopping cart session
+// Refer back to the example from today to see how
+app.use(function(req, res, next) {
+  // ???
+
+  next();
+});
+
 app.use('/', routes);
 
 // catch 404 and forward to error handler
