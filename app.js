@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
+var connect = require('connect');
 var methodOverride = require('method-override');
 
 var routes = require('./routes/index');
