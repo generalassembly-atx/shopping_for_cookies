@@ -4,11 +4,12 @@ var Product = require('../models/product');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { products: /* ??? */ });
+  res.render('index', { products: Product.all });
 });
 
 router.post('/cart', function(req, res, next) {
-  // How do we add an item to the cart?
+  new Product(req.body.id) - 1;
+  res.redirect('/')
 });
 
 router.delete('/cart', function(req, res, next) {
