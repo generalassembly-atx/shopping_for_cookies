@@ -4,6 +4,7 @@ function Product(options) {
   this.image = options['image'];
   this.description = options['description'];
   Product.all.push(this);
+  Product.push(cart);
 }
 
 Product.find = function(id) {
