@@ -8,8 +8,18 @@
     <h1>Shopping for Cookies</h1>
 
 
-    <strong>Items in cart: <!-- Print the number of items in the cart here --></strong>
+    <strong>Items in cart: <%= cart.length %></strong>
     <ul>
+      <% cart.forEach(function(product){ %>
+      <form action="'/cart'" method="post">
+        <li><%= product.name %></li>
+        <input type="hidden" name="_method" value="delete">
+        <input type="hidden" name="id" value="<%= product.id %>">
+        <input type="submit" name="delete" value="Delete">
+      </form>
+     <% }) %>
+
+
       <!-- List the names of the items in your cart here -->
 
       <!-- If you're adventurous, try adding a delete form/button for each item to remove it from the cart! -->
