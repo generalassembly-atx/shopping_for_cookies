@@ -13,3 +13,7 @@ We're going to build a shopping cart that allows us to buy different types of co
 
 ## Bonus
 Allow users to remove items from the shopping cart with a button next to each item in the list. You'll probably need to use the [method override](https://github.com/expressjs/method-override) module (which is already installed) to get a "delete" method working.
+
+## Licensing
+All content is licensed under a CC­BY­NC­SA 4.0 license.
+All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
