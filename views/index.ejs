@@ -11,7 +11,9 @@
     <strong>Items in cart: <!-- Print the number of items in the cart here --></strong>
     <ul>
       <!-- List the names of the items in your cart here -->
-
+        <% cart.forEach(function(product){ %>
+               <li><%= product.name %></li>
+        <% }) %>
       <!-- If you're adventurous, try adding a delete form/button for each item to remove it from the cart! -->
         <!-- Note: if you try the delete form, you'll probably need a line like this inside your form: -->
         <!-- <input type="hidden" name="_method" value="delete"> -->
